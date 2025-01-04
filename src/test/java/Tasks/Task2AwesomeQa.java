@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class Task2AwesomeQa {
@@ -14,12 +15,11 @@ public class Task2AwesomeQa {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
 
-
-
         //initializing Chrome Browser
         WebDriver driver = new ChromeDriver(options);
 
-        //Open AwesomeQa Website 20
+        //Open AwesomeQa Website to interact with web elements.
+
         driver.get("https://awesomeqa.com/practice.html");
         driver.findElement(By.name("firstname")).sendKeys("Shiva");
         driver.findElement(By.name("lastname")).sendKeys("Krishna");
@@ -29,7 +29,7 @@ public class Task2AwesomeQa {
         driver.findElement(By.id("profession-1")).click();
         driver.findElement(By.id("tool-2")).click();
         driver.findElement(By.id("tool-2")).click();
-
+        
 
 
         try {
