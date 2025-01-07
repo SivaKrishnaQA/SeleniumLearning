@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class KatalonAppointment23Dec {
+public class Task1_KatalonAppointment23Dec {
 
     @Test
 
